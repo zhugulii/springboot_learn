@@ -1,7 +1,18 @@
 server:
   port: 8080
-  servlet:
-    context-path: /hello
 spring:
   application:
     name: hello
+
+person1:
+  lastName: zhangsan
+  age: 18
+  boss: false
+  brith: 2000/12/12
+  maps: {k1: v1, k2: v2}
+  lists:
+    - lisi
+    - zhaowu
+  dog:
+    name: didi
+    age: 5
