@@ -1,8 +1,14 @@
+# 主配置文件
+# 通过文件名的命名形式区分出不同的环境的配置，文件命名格式为：application-{profile}.properties/yml
+# 其中，{profile} 一般为各个环境的名称或简称，例如 dev、test 和 prod 等等。
+# 也可使用命令行激活开发环境  java -jar helloworld-0.0.1-SNAPSHOT.jar  --spring.profiles.active=dev
 server:
   port: 8080
 spring:
   application:
     name: hello
+  profiles:
+    active: prod
 
 person1:
   lastName: zhangsan
